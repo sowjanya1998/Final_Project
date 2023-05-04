@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminActivityListController">
+   <children>
+      <TableView fx:id="foodtable" editable="true" layoutX="38.0" layoutY="54.0" prefHeight="335.0" prefWidth="525.0">
+        <columns>
+          <TableColumn fx:id="activity_id" prefWidth="109.0" text="ACTIVITY ID" />
+          <TableColumn fx:id="activity_name" prefWidth="122.0" text="ACTIVITY NAME" />
+          <TableColumn fx:id="activity_price" minWidth="0.0" prefWidth="111.0" text="PRICE" />
+          <TableColumn fx:id="activity_desc" prefWidth="181.33330281575525" text="DESCRIPTION" />
+        </columns>
+      </TableView>
+      <TextField fx:id="new_activity_id" editable="false" layoutX="38.0" layoutY="397.0" prefHeight="25.0" prefWidth="57.0" promptText="ID" />
+      <TextField fx:id="new_activity_name" layoutX="104.0" layoutY="397.0" prefHeight="25.0" prefWidth="155.0" promptText="Name" />
+      <TextField fx:id="new_activity_price" layoutX="266.0" layoutY="397.0" prefHeight="25.0" prefWidth="123.0" promptText="Price" />
+      <TextField fx:id="new_activity_desc" layoutX="397.0" layoutY="397.0" prefHeight="25.0" prefWidth="167.0" promptText="Description" />
+      <Button layoutX="38.0" layoutY="459.0" mnemonicParsing="false" onAction="#addNewActivity" text="Add" />
+      <Button layoutX="84.0" layoutY="459.0" mnemonicParsing="false" onAction="#updateActivity" text="Update" />
+      <Button layoutX="148.0" layoutY="459.0" mnemonicParsing="false" onAction="#deleteActivity" text="Delete" />
+       <Button layoutX="210.0" layoutY="459.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button layoutX="507.0" layoutY="23.0" mnemonicParsing="false" onAction="#logoutBtnAction" text="Logout" />
+      <Label fx:id="dbOperationsMsg" layoutX="324.0" layoutY="463.0" prefHeight="20.0" prefWidth="245.0" textFill="#1e23ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

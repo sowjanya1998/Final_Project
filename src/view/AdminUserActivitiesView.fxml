@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminUserActivityController">
+   <children>
+      <TableView fx:id="ActivitiesTable" editable="true" layoutX="38.0" layoutY="50.0" prefHeight="366.0" prefWidth="525.0" AnchorPane.rightAnchor="37.0">
+        <columns>
+          <TableColumn fx:id="userId" prefWidth="109.0" text="UserId" />
+          <TableColumn fx:id="userName" prefWidth="122.0" text="User Name" />
+          <TableColumn fx:id="activityName" minWidth="0.0" prefWidth="111.0" text="Activity Name" />
+          <TableColumn fx:id="price" prefWidth="181.33330281575525" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="userNewId" editable="false" layoutX="37.0" layoutY="425.0" prefHeight="25.0" prefWidth="57.0" promptText="ID" />
+      <TextField fx:id="userNewName" layoutX="103.0" layoutY="425.0" prefHeight="25.0" prefWidth="155.0" promptText="Name" />
+      <TextField fx:id="userNewActivityName" layoutX="265.0" layoutY="425.0" prefHeight="25.0" prefWidth="123.0" promptText="Activity" />
+      <TextField fx:id="userNewPrice" layoutX="396.0" layoutY="425.0" prefHeight="25.0" prefWidth="167.0" promptText="Price" />
+      <Button layoutX="38.0" layoutY="466.0" mnemonicParsing="false" onAction="#addUserActivity" text="Add" />
+      <Button layoutX="95.0" layoutY="466.0" mnemonicParsing="false" onAction="#updateUserActivity" text="Update" />
+      <Button layoutX="167.0" layoutY="466.0" mnemonicParsing="false" onAction="#deleteUserActivity" text="Delete" />
+       <Button layoutX="235.0" layoutY="466.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" ellipsisString="" layoutX="506.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutBtnAction" text="Logout" />
+      <Label fx:id="dbOperationsMsg" layoutX="301.0" layoutY="470.0" prefHeight="20.0" prefWidth="282.0" textFill="#1e23ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomePageController">
+   <children>
+      <ImageView fx:id="bakery" fitHeight="500.0" fitWidth="600.0" layoutX="0.0" layoutY="2.0" opacity="0.50" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/Fest.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="customercare" layoutX="14.0" layoutY="14.0" onAction="#customerCare" text="Customer Care" textFill="#f2ecec">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="userlogin" layoutX="420.0" layoutY="103.0" onAction="#CustomerLogin" text="User Login" textFill="#f2eeee">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="adminuser" layoutX="414.0" layoutY="26.0" onAction="#AdminLogin" text="Admin Login" textFill="#fceaea">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Hyperlink>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="182.0" prefHeight="80.0" prefWidth="376.0" text="Illinois Institute Spring Fest" textAlignment="CENTER">
+         <font>
+            <Font name="Apple Chancery" size="31.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8421052694320679" green="0.05068226158618927" blue="0.05068226158618927" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09210526198148727" green="0.06396199017763138" blue="0.06396199017763138" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

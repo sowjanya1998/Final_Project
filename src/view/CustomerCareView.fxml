@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffffe6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerCareController">
+   <children>
+      <ImageView fx:id="contactUs" fitHeight="500.0" fitWidth="600.0" opacity="0.1" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/Help.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="82.0" layoutY="336.0" prefHeight="38.0" prefWidth="389.0" style="-fx-background-image: /Users/apple/Desktop;" text="Contact Us : +1(xxx)xxx-xxxx" textFill="#9e36b9">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="User" layoutX="450.0" layoutY="35.0" onAction="#UserLogin" text="User Login">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="admin" layoutX="326.0" layoutY="35.0" onAction="#AdminLogin" text="Admin Login">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="homeLink" layoutX="43.0" layoutY="35.0" onAction="#WelcomePage" text="Home">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Label alignment="CENTER" layoutX="221.0" layoutY="200.0" prefHeight="31.0" prefWidth="158.0" text="On" />
+      <Label layoutX="231.0" layoutY="242.0" prefHeight="48.0" prefWidth="158.0" text="May 10th, 2023">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

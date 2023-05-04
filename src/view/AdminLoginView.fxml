@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginController">
+   <children>
+      <AnchorPane layoutX="89.0" layoutY="99.0" prefHeight="351.0" prefWidth="438.0" style="-fx-border-color: #000000; -fx-border-width: 2px;" />
+      <TextField fx:id="user" layoutX="177.0" layoutY="160.0" prefHeight="27.0" prefWidth="211.0" promptText="User Name" />
+      <PasswordField fx:id="password" layoutX="177.0" layoutY="223.0" prefHeight="27.0" prefWidth="211.0" promptText="Password" />
+      <Button fx:id="button" layoutX="186.0" layoutY="296.0" mnemonicParsing="false" onAction="#Authenticate" text="Sign In">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="label" layoutX="165.0" layoutY="365.0" prefHeight="22.0" prefWidth="259.0" textAlignment="CENTER" textFill="#e52525e0" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Label>
+      <Button fx:id="home" layoutX="347.0" layoutY="296.0" mnemonicParsing="false" onAction="#Welcome" text="Home">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="138.0" layoutY="34.0" prefHeight="58.0" prefWidth="324.0" text="ADMIN LOGIN">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
